@@ -2,32 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2dd7e7c-97f4-4c52-93c8-cdf78560dc02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/flink-example.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/SocketWindowWordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/socket/SocketWindowWordCount2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ThrottledIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/wordcount/util/WordCountData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SimpleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/connector/FetchFaultFromKafka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/HelloWorld.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/watermark1/Test1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTTP Request" />
         <option value="Class" />
       </list>
     </option>
@@ -35,66 +34,87 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="$PROJECT_DIR$" />
-        <option value="$PROJECT_DIR$/.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1bTtVGg5iHlYCBzlaxyVuR9c8PR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean install" />
       <command value="mvn clean package" />
+      <command value="mvn clean package -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SimpleTest.test3">
+  <component name="RunManager" selected="Scala REPL.Scala REPL">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocketWindowWordCount2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.SocketWindowWordCount2" />
+    <configuration name="FetchFaultFromKafka" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="connector.FetchFaultFromKafka" />
       <module name="flink-example" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socket.*" />
+          <option name="PATTERN" value="connector.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
+      <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WikipediaAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="wikiedits.WikipediaAnalysis" />
+      <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="wikiedits.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +125,7 @@
     <configuration name="WordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="wordcount.WordCount" />
       <module name="flink-example" />
-      <option name="PROGRAM_PARAMETERS" value="--output out" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="wordcount.*" />
@@ -122,42 +142,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimpleTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SimpleTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SimpleTest" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleTest.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SimpleTest" />
-      <option name="METHOD_NAME" value="test3" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala REPL" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="flink-example" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,33 +178,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.FetchFaultFromKafka" />
       <item itemvalue="Application.WordCount" />
-      <item itemvalue="JUnit.SimpleTest.test1" />
-      <item itemvalue="JUnit.SimpleTest.test2" />
-      <item itemvalue="Application.SocketWindowWordCount2" />
-      <item itemvalue="JUnit.SimpleTest.test3" />
+      <item itemvalue="Application.WikipediaAnalysis" />
+      <item itemvalue="Application.HelloWorld" />
+      <item itemvalue="Scala REPL.Scala REPL" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SimpleTest.test3" />
-        <item itemvalue="Application.SocketWindowWordCount2" />
-        <item itemvalue="JUnit.SimpleTest.test2" />
-        <item itemvalue="JUnit.SimpleTest.test1" />
+        <item itemvalue="Scala REPL.Scala REPL" />
+        <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Application.FetchFaultFromKafka" />
+        <item itemvalue="Application.WikipediaAnalysis" />
         <item itemvalue="Application.WordCount" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
@@ -229,36 +214,76 @@
       <workItem from="1588814932849" duration="9601000" />
       <workItem from="1588850316095" duration="143000" />
       <workItem from="1588850469182" duration="155000" />
-      <workItem from="1588850627584" duration="14804000" />
+      <workItem from="1588850627584" duration="15466000" />
+      <workItem from="1589002222392" duration="2453000" />
+      <workItem from="1589249012329" duration="613000" />
+      <workItem from="1589283548296" duration="5000" />
+      <workItem from="1589382551626" duration="4127000" />
+      <workItem from="1589419192605" duration="34000" />
+      <workItem from="1589419233393" duration="3061000" />
+      <workItem from="1589423699339" duration="156000" />
+      <workItem from="1589423862620" duration="637000" />
+      <workItem from="1589518612606" duration="6000" />
+      <workItem from="1589518701930" duration="594000" />
+      <workItem from="1589645140294" duration="551000" />
+      <workItem from="1589645734592" duration="1210000" />
+      <workItem from="1589647003603" duration="1846000" />
+      <workItem from="1589648888766" duration="3330000" />
+      <workItem from="1589963576113" duration="4920000" />
+      <workItem from="1590375506444" duration="1111000" />
+      <workItem from="1590504893863" duration="1420000" />
+      <workItem from="1590507613790" duration="7394000" />
+      <workItem from="1590593052334" duration="3465000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1588996644849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1588996644849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="262" y="78" width="811" height="666" key="#Project_Structure" timestamp="1588816871838">
+    <state x="262" y="78" width="811" height="666" key="#Project_Structure" timestamp="1589650179261">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state x="262" y="78" width="811" height="666" key="#Project_Structure/46.23.1234.777@46.23.1234.777" timestamp="1588816871838" />
+    <state x="262" y="78" width="811" height="666" key="#Project_Structure/46.23.1234.777@46.23.1234.777" timestamp="1589650179261" />
     <state x="264" y="78" width="811" height="666" key="#Project_Structure/48.23.1232.777@48.23.1232.777" timestamp="1588669515692" />
-    <state x="128" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588853180373">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="127" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589963863452">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
-    <state x="128" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/46.23.1234.777@46.23.1234.777" timestamp="1588853180373" />
-    <state x="477" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1588906086142">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="127" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/45.23.1235.777@45.23.1235.777" timestamp="1589963863452" />
+    <state x="128" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog/46.23.1234.777@46.23.1234.777" timestamp="1589650456845" />
+    <state x="474" y="124" key="#com.intellij.ide.util.MemberChooser" timestamp="1590511032772">
+      <screen x="42" y="23" width="1238" height="777" />
     </state>
+    <state x="474" y="124" key="#com.intellij.ide.util.MemberChooser/42.23.1238.777@42.23.1238.777" timestamp="1590511032772" />
+    <state x="475" y="124" key="#com.intellij.ide.util.MemberChooser/43.23.1237.777@43.23.1237.777" timestamp="1589383597708" />
     <state x="477" y="124" key="#com.intellij.ide.util.MemberChooser/46.23.1234.777@46.23.1234.777" timestamp="1588906086142" />
     <state x="260" y="96" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1588850718912">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state x="259" y="96" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/45.23.1235.777@45.23.1235.777" timestamp="1588814612059" />
     <state x="260" y="96" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/46.23.1234.777@46.23.1234.777" timestamp="1588850718912" />
-    <state x="233" y="98" key="CommitChangelistDialog2" timestamp="1588908766832">
+    <state x="428" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590540855189">
+      <screen x="42" y="23" width="1238" height="777" />
+    </state>
+    <state x="428" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/42.23.1238.777@42.23.1238.777" timestamp="1590540855189" />
+    <state x="233" y="98" key="CommitChangelistDialog2" timestamp="1588996644280">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state x="233" y="98" key="CommitChangelistDialog2/46.23.1234.777@46.23.1234.777" timestamp="1588908766832" />
+    <state x="233" y="98" key="CommitChangelistDialog2/46.23.1234.777@46.23.1234.777" timestamp="1588996644280" />
     <state width="435" height="466" key="DebuggerActiveHint" timestamp="1588853067615">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
@@ -275,75 +300,90 @@
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state x="395" y="126" key="Github.UntrackedFilesDialog/46.23.1234.777@46.23.1234.777" timestamp="1588907377030" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom" timestamp="1588918278015">
+    <state width="595" height="197" key="GridCell.Tab.0.bottom" timestamp="1590377403342">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/42.23.1238.777@42.23.1238.777" timestamp="1590078096162" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
+    <state width="595" height="197" key="GridCell.Tab.0.bottom/45.23.1235.777@45.23.1235.777" timestamp="1590377403342" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1589763866557" />
+    <state width="595" height="197" key="GridCell.Tab.0.center" timestamp="1590377403341">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state width="1190" height="197" key="GridCell.Tab.0.center/42.23.1238.777@42.23.1238.777" timestamp="1590078096160" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
+    <state width="595" height="197" key="GridCell.Tab.0.center/45.23.1235.777@45.23.1235.777" timestamp="1590377403341" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1589763866555" />
+    <state width="595" height="197" key="GridCell.Tab.0.left" timestamp="1590377403341">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state width="1190" height="197" key="GridCell.Tab.0.left/42.23.1238.777@42.23.1238.777" timestamp="1590078096158" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1589420033783" />
+    <state width="595" height="197" key="GridCell.Tab.0.left/45.23.1235.777@45.23.1235.777" timestamp="1590377403341" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1589650773890" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1589763866555" />
+    <state width="595" height="197" key="GridCell.Tab.0.right" timestamp="1590377403342">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state width="1190" height="197" key="GridCell.Tab.0.right/42.23.1238.777@42.23.1238.777" timestamp="1590078096161" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
+    <state width="595" height="197" key="GridCell.Tab.0.right/45.23.1235.777@45.23.1235.777" timestamp="1590377403342" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1589763866556" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1589001271585">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1588837029824" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/45.23.1235.777@45.23.1235.777" timestamp="1588814928767" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1588918278015" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1588684547023" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center" timestamp="1588918278013">
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom/46.23.1234.777@46.23.1234.777" timestamp="1589001271585" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1589001271584">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state width="1190" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1588837029823" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/45.23.1235.777@45.23.1235.777" timestamp="1588814928766" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1588918278013" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1588684547020" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left" timestamp="1588918278012">
+    <state width="1190" height="245" key="GridCell.Tab.1.center/46.23.1234.777@46.23.1234.777" timestamp="1589001271584" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1589001271582">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state width="1190" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1588837029822" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/45.23.1235.777@45.23.1235.777" timestamp="1588814928765" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1588918278012" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1588684547019" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right" timestamp="1588918278014">
+    <state width="1190" height="245" key="GridCell.Tab.1.left/46.23.1234.777@46.23.1234.777" timestamp="1589001271582" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1589001271584">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state width="1190" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1588837029823" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/45.23.1235.777@45.23.1235.777" timestamp="1588814928767" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1588918278014" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1588684547022" />
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1588918136017">
-      <screen x="46" y="23" width="1234" height="777" />
-    </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom/46.23.1234.777@46.23.1234.777" timestamp="1588918136017" />
-    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1588918136015">
-      <screen x="46" y="23" width="1234" height="777" />
-    </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.center/46.23.1234.777@46.23.1234.777" timestamp="1588918136015" />
-    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1588918136015">
-      <screen x="46" y="23" width="1234" height="777" />
-    </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.left/46.23.1234.777@46.23.1234.777" timestamp="1588918136015" />
-    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1588918136016">
-      <screen x="46" y="23" width="1234" height="777" />
-    </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.right/46.23.1234.777@46.23.1234.777" timestamp="1588918136016" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right/46.23.1234.777@46.23.1234.777" timestamp="1589001271584" />
     <state x="202" y="75" key="Maven.ArtifactSearchDialog" timestamp="1588669525381">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="202" y="75" key="Maven.ArtifactSearchDialog/48.23.1232.777@48.23.1232.777" timestamp="1588669525381" />
-    <state x="171" y="23" key="SettingsEditor" timestamp="1588902652412">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="190" y="23" key="SettingsEditor" timestamp="1590540469239">
+      <screen x="42" y="23" width="1238" height="777" />
     </state>
-    <state x="171" y="23" key="SettingsEditor/46.23.1234.777@46.23.1234.777" timestamp="1588902652412" />
+    <state x="190" y="23" key="SettingsEditor/42.23.1238.777@42.23.1238.777" timestamp="1590540469239" />
+    <state x="193" y="23" key="SettingsEditor/45.23.1235.777@45.23.1235.777" timestamp="1589963842275" />
+    <state x="194" y="23" key="SettingsEditor/46.23.1234.777@46.23.1234.777" timestamp="1589650758620" />
     <state x="173" y="50" key="SettingsEditor/48.23.1232.777@48.23.1232.777" timestamp="1588668987052" />
     <state width="500" height="447" key="SwitcherDM" timestamp="1588684265129">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="500" height="447" key="SwitcherDM/48.23.1232.777@48.23.1232.777" timestamp="1588684265129" />
+    <state x="264" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588996648479">
+      <screen x="46" y="23" width="1234" height="777" />
+    </state>
+    <state x="264" y="153" key="Vcs.Push.Dialog.v2/46.23.1234.777@46.23.1234.777" timestamp="1588996648479" />
     <state x="320" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1588669478078">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="320" y="246" key="com.intellij.ide.util.TipDialog/48.23.1232.777@48.23.1232.777" timestamp="1588669478078" />
+    <state x="456" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590377396279">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state x="456" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/45.23.1235.777@45.23.1235.777" timestamp="1590377396278" />
     <state x="56" y="118" key="new project wizard" timestamp="1588854785745">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state x="56" y="118" key="new project wizard/46.23.1234.777@46.23.1234.777" timestamp="1588854785745" />
     <state x="58" y="118" key="new project wizard/48.23.1232.777@48.23.1232.777" timestamp="1588668093634" />
-    <state x="328" y="186" width="672" height="675" key="run.anything.popup" timestamp="1588819233607">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="325" y="186" width="675" height="675" key="run.anything.popup" timestamp="1589423760724">
+      <screen x="42" y="23" width="1238" height="777" />
     </state>
+    <state x="325" y="186" width="675" height="675" key="run.anything.popup/42.23.1238.777@42.23.1238.777" timestamp="1589423760724" />
     <state x="327" y="186" width="672" height="675" key="run.anything.popup/45.23.1235.777@45.23.1235.777" timestamp="1588814935509" />
     <state x="328" y="186" width="672" height="675" key="run.anything.popup/46.23.1234.777@46.23.1234.777" timestamp="1588819233607" />
     <state x="329" y="186" width="670" height="675" key="run.anything.popup/48.23.1232.777@48.23.1232.777" timestamp="1588684315172" />

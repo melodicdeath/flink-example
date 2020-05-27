@@ -9,7 +9,7 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
-import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer08;
+import org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer;
 import org.apache.flink.streaming.connectors.wikiedits.WikipediaEditEvent;
 import org.apache.flink.streaming.connectors.wikiedits.WikipediaEditsSource;
 
@@ -43,15 +43,15 @@ public class WikipediaAnalysis {
                     }
                 });
 
-//        result.print();
-        result
-                .map(new MapFunction<Tuple2<String,Long>, String>() {
-                    @Override
-                    public String map(Tuple2<String, Long> tuple) {
-                        return tuple.toString();
-                    }
-                })
-                .addSink(new FlinkKafkaProducer08<>("122.51.128.9:9092", "wiki-results", new SimpleStringSchema()));
+        result.print();
+//        result
+//                .map(new MapFunction<Tuple2<String,Long>, String>() {
+//                    @Override
+//                    public String map(Tuple2<String, Long> tuple) {
+//                        return tuple.toString();
+//                    }
+//                })
+//                .addSink(new FlinkKafkaProducer<>("122.51.128.9:9092", "wiki-results", new SimpleStringSchema()));
         see.execute();
     }
 }
