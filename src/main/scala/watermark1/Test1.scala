@@ -1,9 +1,11 @@
 package watermark1
 
-import java.text.SimpleDateFormat
+import java.time.format.DateTimeFormatter
+import java.time.{Instant, LocalDateTime, ZoneId, ZoneOffset}
 
 import org.apache.flink.api.scala._
 import com.alibaba.fastjson.JSON
+import com.alibaba.fastjson.serializer.SerializerFeature
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks
 import org.apache.flink.streaming.api.scala.function.ProcessWindowFunction
@@ -13,8 +15,6 @@ import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindo
 import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow
 import org.apache.flink.util.Collector
-
-import scala.collection.mutable.ArrayBuffer
 
 /**
  * @Description
@@ -35,15 +35,15 @@ object Test1 {
   //设置source 本地socket
   val input: DataStream[String] = env.socketTextStream("localhost", 9000)
 
-  val lateText = new OutputTag[(String, String, Long, Long)]("late_data")
+  val lateText = new OutputTag[EventObj]("late_data")
 
   val value = input.filter(!_.isEmpty)
     .flatMap((in: String, out: Collector[EventObj]) => {
       out.collect(JSON.parseObject(in, classOf[EventObj]))
     })
     .assignTimestampsAndWatermarks(new MyWaterMark)
-    .map(x => (x.name, x.datetime, x.timestamp, 1L))
-    .keyBy(_._1)
+    //    .map(x => (x.name, x.datetime, x.timestamp, 1L))
+    .keyBy(_.name)
     .window(TumblingEventTimeWindows.of(Time.seconds(5)))
     .sideOutputLateData(lateText)
 
@@ -51,7 +51,7 @@ object Test1 {
     .process(new MyProcessWindowFunction)
 
   value.getSideOutput(lateText).map(x => {
-    "延迟数据|name:" + x._1 + "|datetime:" + x._2
+    "延迟数据|name:" + x.name + "|datetime:" + x.datetime
   }).print()
 
   value.print()
@@ -60,11 +60,9 @@ object Test1 {
 }
 
 class MyWaterMark extends AssignerWithPeriodicWatermarks[EventObj] {
-
-  val maxOutOfOrderness = 10000L // 3.0 seconds
+  val dateTimeFormatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+  val maxOutOfOrderness = 0L // 3.0 seconds
   var currentMaxTimestamp = 0L
-
-  val sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
 
   /**
    * 用于生成新的水位线，新的水位线只有大于当前水位线才是有效的
@@ -89,31 +87,45 @@ class MyWaterMark extends AssignerWithPeriodicWatermarks[EventObj] {
     currentMaxTimestamp = Math.max(element.timestamp, currentMaxTimestamp)
 
     val id = Thread.currentThread().getId
-    println("currentThreadId:" + id + ",key:" + element.name + ",eventTime:[" + element.datetime + "],currentMaxTimestamp:[" + sdf.format(currentMaxTimestamp) + "],watermark:[" + sdf.format(getCurrentWatermark().getTimestamp) + "]")
+    println("currentThreadId:" + id + ",key:" + element.name + ",eventTime:[" + element.datetime
+      + "],currentMaxTimestamp:[" + LocalDateTime.ofInstant(Instant.ofEpochMilli(currentMaxTimestamp),
+      ZoneId.systemDefault()).format(dateTimeFormatter)) + "],watermark:[" +
+      LocalDateTime.ofInstant(Instant.ofEpochMilli(getCurrentWatermark().getTimestamp),
+        ZoneId.systemDefault()).format(dateTimeFormatter) + "]"
 
     element.timestamp
   }
 }
 
 class MyProcessWindowFunction extends ProcessWindowFunction[EventObj, String, String, TimeWindow] {
-  override def process(key: String, context: Context, elements: Iterable[EventObj], out: Collector[String]): Unit = {
+  val dateTimeFormatter: DateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
 
-//    val arr = ArrayBuffer[(String, Long)]()
+  override def process(key: String, context: Context, elements: Iterable[EventObj], out: Collector[String]): Unit = {
     val iterator = elements.iterator
     while (iterator.hasNext) {
       val value = iterator.next()
-
-//      println(value._1, DateUtils.getNewFormatDateString(new Date(value._2)))
-//      arr += value
+      println(value)
+      //      println(value._1, DateUtils.getNewFormatDateString(new Date(value._2)))
+      //      arr += value
     }
-//    println(arr)
-//    val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS")
-//    val timeWindow = context.window
-//    out.collect(key + "," + arr.size + "," + format.format(arr.head._2) + "," + format.format(arr.last._2) + "," + format.format(timeWindow.getStart) + "," + format.format(timeWindow.getEnd))
+
+        out.collect(key + "," +
+          LocalDateTime.ofInstant(Instant.ofEpochMilli(context.window.getStart),
+            ZoneId.systemDefault()).format(dateTimeFormatter) + "," +
+          LocalDateTime.ofInstant(Instant.ofEpochMilli(context.window.getEnd),
+            ZoneId.systemDefault()).format(dateTimeFormatter))
+    //    println(arr)
+    //    val format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS")
+    //    val timeWindow = context.window
+    //    out.collect(key + "," + arr.size + "," + simpleDateFormat.format(arr.head._2) + "," + simpleDateFormat.format(arr.last._2) + "," + simpleDateFormat.format(timeWindow.getStart) + "," + simpleDateFormat.format(timeWindow.getEnd))
   }
 
 }
 
-class EventObj(val name: String, val timestamp: Long, val datetime: String){
+class EventObj(val name: String, val datetime: String) {
+  def timestamp: Long = LocalDateTime.parse(this.datetime,
+    DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+    .toInstant(ZoneOffset.ofHours(8)).toEpochMilli;
 
+    override def toString: String = JSON.toJSONString(this,SerializerFeature.PrettyFormat)
 }

@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2dd7e7c-97f4-4c52-93c8-cdf78560dc02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/connector/FetchFaultFromKafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/HelloWorld.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/watermark1/Test1.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/HelloWorld.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/HelloWorld.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/watermark1/Test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/watermark1/Test1.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +70,7 @@
       <command value="mvn clean package -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Scala REPL.Scala REPL">
+  <component name="RunManager" selected="Application.HelloWorld">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -186,8 +177,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.HelloWorld" />
+        <item itemvalue="Scala REPL.Scala REPL" />
         <item itemvalue="Application.FetchFaultFromKafka" />
         <item itemvalue="Application.WikipediaAnalysis" />
         <item itemvalue="Application.WordCount" />
@@ -233,7 +224,8 @@
       <workItem from="1590375506444" duration="1111000" />
       <workItem from="1590504893863" duration="1420000" />
       <workItem from="1590507613790" duration="7394000" />
-      <workItem from="1590593052334" duration="3465000" />
+      <workItem from="1590593052334" duration="4352000" />
+      <workItem from="1590677537584" duration="7097000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1588996644849</created>
@@ -242,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588996644849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="scala watermark test">
+      <created>1590600416937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590600416937</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +251,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="scala watermark test" />
+    <option name="LAST_COMMIT_MESSAGE" value="scala watermark test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="262" y="78" width="811" height="666" key="#Project_Structure" timestamp="1589650179261">
@@ -260,6 +260,10 @@
     </state>
     <state x="262" y="78" width="811" height="666" key="#Project_Structure/46.23.1234.777@46.23.1234.777" timestamp="1589650179261" />
     <state x="264" y="78" width="811" height="666" key="#Project_Structure/48.23.1232.777@48.23.1232.777" timestamp="1588669515692" />
+    <state x="402" y="184" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1590684891186">
+      <screen x="48" y="23" width="1232" height="777" />
+    </state>
+    <state x="402" y="184" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/48.23.1232.777@48.23.1232.777" timestamp="1590684891186" />
     <state x="127" y="75" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589963863452">
       <screen x="45" y="23" width="1235" height="777" />
     </state>
@@ -280,17 +284,19 @@
       <screen x="42" y="23" width="1238" height="777" />
     </state>
     <state x="428" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/42.23.1238.777@42.23.1238.777" timestamp="1590540855189" />
-    <state x="233" y="98" key="CommitChangelistDialog2" timestamp="1588996644280">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="232" y="98" key="CommitChangelistDialog2" timestamp="1590600416517">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
+    <state x="232" y="98" key="CommitChangelistDialog2/45.23.1235.777@45.23.1235.777" timestamp="1590600416517" />
     <state x="233" y="98" key="CommitChangelistDialog2/46.23.1234.777@46.23.1234.777" timestamp="1588996644280" />
     <state width="435" height="466" key="DebuggerActiveHint" timestamp="1588853067615">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state width="435" height="466" key="DebuggerActiveHint/46.23.1234.777@46.23.1234.777" timestamp="1588853067615" />
-    <state x="197" y="90" key="DiffContextDialog" timestamp="1588907487568">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="196" y="90" key="DiffContextDialog" timestamp="1590600402654">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
+    <state x="196" y="90" key="DiffContextDialog/45.23.1235.777@45.23.1235.777" timestamp="1590600402654" />
     <state x="197" y="90" key="DiffContextDialog/46.23.1234.777@46.23.1234.777" timestamp="1588907487568" />
     <state x="524" y="316" key="Github.ShareDialog" timestamp="1588907364042">
       <screen x="46" y="23" width="1234" height="777" />
@@ -300,54 +306,58 @@
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state x="395" y="126" key="Github.UntrackedFilesDialog/46.23.1234.777@46.23.1234.777" timestamp="1588907377030" />
-    <state width="595" height="197" key="GridCell.Tab.0.bottom" timestamp="1590377403342">
-      <screen x="45" y="23" width="1235" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.0.bottom" timestamp="1590687118713">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.bottom/42.23.1238.777@42.23.1238.777" timestamp="1590078096162" />
     <state width="1190" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
     <state width="595" height="197" key="GridCell.Tab.0.bottom/45.23.1235.777@45.23.1235.777" timestamp="1590377403342" />
     <state width="1190" height="197" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1589763866557" />
-    <state width="595" height="197" key="GridCell.Tab.0.center" timestamp="1590377403341">
-      <screen x="45" y="23" width="1235" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1590687118713" />
+    <state width="1190" height="245" key="GridCell.Tab.0.center" timestamp="1590687118711">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.center/42.23.1238.777@42.23.1238.777" timestamp="1590078096160" />
     <state width="1190" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
     <state width="595" height="197" key="GridCell.Tab.0.center/45.23.1235.777@45.23.1235.777" timestamp="1590377403341" />
     <state width="1190" height="197" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1589763866555" />
-    <state width="595" height="197" key="GridCell.Tab.0.left" timestamp="1590377403341">
-      <screen x="45" y="23" width="1235" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1590687118711" />
+    <state width="1190" height="245" key="GridCell.Tab.0.left" timestamp="1590687118711">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.left/42.23.1238.777@42.23.1238.777" timestamp="1590078096158" />
     <state width="1190" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1589420033783" />
     <state width="595" height="197" key="GridCell.Tab.0.left/45.23.1235.777@45.23.1235.777" timestamp="1590377403341" />
     <state width="1190" height="197" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1589650773890" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1589763866555" />
-    <state width="595" height="197" key="GridCell.Tab.0.right" timestamp="1590377403342">
-      <screen x="45" y="23" width="1235" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1590687118711" />
+    <state width="1190" height="245" key="GridCell.Tab.0.right" timestamp="1590687118712">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.right/42.23.1238.777@42.23.1238.777" timestamp="1590078096161" />
     <state width="1190" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
     <state width="595" height="197" key="GridCell.Tab.0.right/45.23.1235.777@45.23.1235.777" timestamp="1590377403342" />
     <state width="1190" height="197" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1589650773891" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1589763866556" />
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1589001271585">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1590687118712" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1590687118409">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="245" key="GridCell.Tab.1.bottom/46.23.1234.777@46.23.1234.777" timestamp="1589001271585" />
-    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1589001271584">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom/48.23.1232.777@48.23.1232.777" timestamp="1590687118409" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1590687118407">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="245" key="GridCell.Tab.1.center/46.23.1234.777@46.23.1234.777" timestamp="1589001271584" />
-    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1589001271582">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center/48.23.1232.777@48.23.1232.777" timestamp="1590687118407" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1590687118407">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="245" key="GridCell.Tab.1.left/46.23.1234.777@46.23.1234.777" timestamp="1589001271582" />
-    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1589001271584">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left/48.23.1232.777@48.23.1232.777" timestamp="1590687118407" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1590687118408">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="1190" height="245" key="GridCell.Tab.1.right/46.23.1234.777@46.23.1234.777" timestamp="1589001271584" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right/48.23.1232.777@48.23.1232.777" timestamp="1590687118408" />
     <state x="202" y="75" key="Maven.ArtifactSearchDialog" timestamp="1588669525381">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
@@ -363,9 +373,10 @@
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="500" height="447" key="SwitcherDM/48.23.1232.777@48.23.1232.777" timestamp="1588684265129" />
-    <state x="264" y="153" key="Vcs.Push.Dialog.v2" timestamp="1588996648479">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="263" y="153" key="Vcs.Push.Dialog.v2" timestamp="1590600418795">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
+    <state x="263" y="153" key="Vcs.Push.Dialog.v2/45.23.1235.777@45.23.1235.777" timestamp="1590600418795" />
     <state x="264" y="153" key="Vcs.Push.Dialog.v2/46.23.1234.777@46.23.1234.777" timestamp="1588996648479" />
     <state x="320" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1588669478078">
       <screen x="48" y="23" width="1232" height="777" />
