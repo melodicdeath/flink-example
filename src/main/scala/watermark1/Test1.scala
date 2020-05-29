@@ -16,6 +16,8 @@ import org.apache.flink.streaming.api.windowing.time.Time
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow
 import org.apache.flink.util.Collector
 
+import scala.beans.BeanProperty
+
 /**
  * @Description
  * @author ZhangTing
@@ -122,10 +124,13 @@ class MyProcessWindowFunction extends ProcessWindowFunction[EventObj, String, St
 
 }
 
-class EventObj(val name: String, val datetime: String) {
-  def timestamp: Long = LocalDateTime.parse(this.datetime,
-    DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-    .toInstant(ZoneOffset.ofHours(8)).toEpochMilli;
+case class EventObj(@BeanProperty name: String, @BeanProperty datetime: String, @BeanProperty timestamp: Long) {
 
-    override def toString: String = JSON.toJSONString(this,SerializerFeature.PrettyFormat)
+  def this(name: String, datetime: String) {
+    this(name, datetime, LocalDateTime.parse(datetime,
+      DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+      .toInstant(ZoneOffset.ofHours(8)).toEpochMilli)
+  }
+
+  override def toString: String = JSON.toJSONString(this, false)
 }

@@ -4,7 +4,9 @@ import java.time.format.DateTimeFormatter
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.serializer.SerializerFeature
-import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.BeanProperty
+import watermark1.EventObj
+
+import scala.beans.BeanProperty
 
 /**
  * @Description
@@ -56,14 +58,29 @@ object HelloWorld {
   val simpleDateFormat: SimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
   println(simpleDateFormat.format(1590683982620L))
 
-  case class a(val a: String, val b: Int)
+  case class a(@BeanProperty a: String, @BeanProperty b: Int)
 
   val a1: a = a("1", 1)
   println(a1.a)
 
   val list: List[Int] = List(1, 2, 3)
-  val cnm = JSON.toJSONString(a1, SerializerFeature.WriteMapNullValue)
+  val cnm = JSON.toJSONString(a1, false)
   println(cnm)
+
+  case class EventObj(@BeanProperty name: String, @BeanProperty datetime: String, @BeanProperty timeStamp: Long) {
+
+    def this(name: String, datetime: String) {
+      this(name, datetime, LocalDateTime.parse(datetime,
+        DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+        .toInstant(ZoneOffset.ofHours(8)).toEpochMilli)
+    }
+
+    override def toString: String = JSON.toJSONString(this, false)
+  }
+
+  val eventObj: EventObj = new EventObj("1", "2020-05-29 09:11:00")
+  println(eventObj)
+
 
   def main(args: Array[String]): Unit = {
 
