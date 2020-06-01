@@ -82,6 +82,9 @@ object HelloWorld {
   println(eventObj)
 
 
+  println(new java.util.Date().getTime())
+
+
   def main(args: Array[String]): Unit = {
 
   }
