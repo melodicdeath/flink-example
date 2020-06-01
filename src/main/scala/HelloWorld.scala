@@ -4,6 +4,8 @@ import java.time.format.DateTimeFormatter
 
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.serializer.SerializerFeature
+import org.apache.commons.lang3.time.DateUtils
+import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.{ObjectMapper}
 import watermark1.EventObj
 
 import scala.beans.BeanProperty
@@ -82,7 +84,26 @@ object HelloWorld {
   println(eventObj)
 
 
-  println(new java.util.Date().getTime())
+  class EventObj2 {
+
+    @BeanProperty var name: String = _
+    @BeanProperty var datetime: String = _
+
+    def getTimestamp = {
+      DateUtils.parseDate(datetime, "yyyy-MM-dd HH:mm:ss").getTime()
+    }
+
+    //    def this(name: String, datetime: String) {
+    //      this(name, datetime,
+    //        DateUtils.parseDate(datetime, "yyyy-MM-dd HH:mm:ss").getTime())
+    //    }
+
+    override def toString: String = JSON.toJSONString(this, false)
+  }
+
+  private val mapper = new ObjectMapper()
+  val test = JSON.parseObject("{\"name\":\"1\",\"datetime\":\"2020-06-01 15:00:06\"}", classOf[EventObj2])
+  println(test)
 
 
   def main(args: Array[String]): Unit = {

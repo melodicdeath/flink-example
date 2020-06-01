@@ -6,7 +6,6 @@ import java.time.{Instant, LocalDateTime, ZoneId, ZoneOffset}
 import org.apache.flink.api.scala._
 import com.alibaba.fastjson.JSON
 import com.alibaba.fastjson.serializer.SerializerFeature
-import com.esotericsoftware.kryo.serializers.TimeSerializers.LocalDateTimeSerializer
 import org.apache.commons.lang3.time.{DateFormatUtils, DateUtils}
 import org.apache.flink.api.common.typeutils.SimpleTypeSerializerSnapshot
 import org.apache.flink.api.java.typeutils.runtime.kryo.Serializers
@@ -23,14 +22,14 @@ import org.apache.flink.util.Collector
 import scala.beans.BeanProperty
 
 /**
- * @Description
+ * @Description nc -l 9000
+ *              {"name":"1","datetime":"2020-06-01 15:00:06"}
  * @author ZhangTing
  * @create 2020-05-26 23:17
  **/
 object Test1 {
   def main(args: Array[String]): Unit = {
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
-    env.registerTypeWithKryoSerializer(classOf[LocalDateTime], classOf[LocalDateTimeSerializer])
     //    env.getConfig.addDefaultKryoSerializer(classOf[LocalDateTime],classOf[LocalDateTimeSerializer])
     //便于测试，并行度设置为1env.getConfig().enableForceKryo();
     env.setParallelism(1)
@@ -93,7 +92,7 @@ class MyWaterMark extends AssignerWithPeriodicWatermarks[EventObj] {
    * @return
    */
   override def extractTimestamp(element: EventObj, previousElementTimestamp: Long): Long = {
-    currentMaxTimestamp = Math.max(element.timestamp, currentMaxTimestamp)
+    currentMaxTimestamp = Math.max(element.getTimestamp, currentMaxTimestamp)
 
     val id = Thread.currentThread().getId
     println("currentThreadId:" + id + ",key:" + element.name + ",eventTime:[" + element.datetime
@@ -101,7 +100,7 @@ class MyWaterMark extends AssignerWithPeriodicWatermarks[EventObj] {
       DateFormatUtils.format(currentMaxTimestamp, "yyyy-MM-dd HH:mm:ss") + "],watermark:[" +
       DateFormatUtils.format(getCurrentWatermark().getTimestamp, "yyyy-MM-dd HH:mm:ss") + "]")
 
-    element.timestamp
+    element.getTimestamp
   }
 }
 
@@ -127,10 +126,13 @@ class MyProcessWindowFunction extends ProcessWindowFunction[EventObj, String, St
 
 }
 
-case class EventObj(@BeanProperty name: String, @BeanProperty datetime: String, @BeanProperty timestamp: Long) {
-  def this(name: String, datetime: String) {
-    this(name, datetime,
-      DateUtils.parseDate(datetime, "yyyy-MM-dd HH:mm:ss").getTime())
+class EventObj {
+
+  @BeanProperty var name: String = _
+  @BeanProperty var datetime: String = _
+
+  def getTimestamp = {
+    DateUtils.parseDate(datetime, "yyyy-MM-dd HH:mm:ss").getTime()
   }
 
   override def toString: String = JSON.toJSONString(this, false)
