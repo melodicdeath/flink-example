@@ -15,7 +15,7 @@
  */
 package flink.example.chapter5
 
-import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import flink.example.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.functions.{FilterFunction, FlatMapFunction, MapFunction}
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._

@@ -2,7 +2,7 @@ package flink.example.chapter6
 
 import java.util.Collections
 
-import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import flink.example.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.ExecutionConfig
 import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.api.common.typeutils.TypeSerializer

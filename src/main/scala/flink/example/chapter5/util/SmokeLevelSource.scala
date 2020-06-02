@@ -15,7 +15,7 @@
  */
 package flink.example.chapter5.util
 
-import examplesourcecode.chapter5.util.SmokeLevel.SmokeLevel
+import flink.example.chapter5.util.SmokeLevel.SmokeLevel
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction.SourceContext
 

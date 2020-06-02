@@ -1,6 +1,6 @@
 package flink.example.chapter6
 
-import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import flink.example.util.{SensorReading, SensorSource, SensorTimeAssigner}
 
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.TimeCharacteristic

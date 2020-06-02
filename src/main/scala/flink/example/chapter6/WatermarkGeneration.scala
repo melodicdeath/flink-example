@@ -1,6 +1,6 @@
 package flink.example.chapter6
 
-import examplesourcecode.util.{SensorReading, SensorSource}
+import flink.example.util.{SensorReading, SensorSource}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.{AssignerWithPeriodicWatermarks, AssignerWithPunctuatedWatermarks}

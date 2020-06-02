@@ -15,9 +15,9 @@
  */
 package flink.example.chapter5
 
-import examplesourcecode.chapter5.util.{Alert, SmokeLevel, SmokeLevelSource}
-import examplesourcecode.chapter5.util.SmokeLevel.SmokeLevel
-import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import flink.example.chapter5.util.{Alert, SmokeLevel, SmokeLevelSource}
+import flink.example.chapter5.util.SmokeLevel.SmokeLevel
+import flink.example.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction
 import org.apache.flink.streaming.api.scala._
