@@ -13,7 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.util
+package flink.example.chapter5.util
 
-/** Case class to hold the SensorReading data. */
-case class SensorReading(id: String, timestamp: Long, temperature: Double)
+object SmokeLevel extends Enumeration {
+
+  type SmokeLevel = SmokeLevel.Value
+  val High, Low = Value
+
+}

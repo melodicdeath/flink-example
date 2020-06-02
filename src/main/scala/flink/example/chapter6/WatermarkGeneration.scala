@@ -1,6 +1,6 @@
-package example.chapter6
+package flink.example.chapter6
 
-import example.util.{SensorReading, SensorSource}
+import examplesourcecode.util.{SensorReading, SensorSource}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.{AssignerWithPeriodicWatermarks, AssignerWithPunctuatedWatermarks}
@@ -16,7 +16,7 @@ object WatermarkGeneration {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure interval of periodic watermark generation
+    // configure interval of periodic flink.watermark generation
     env.getConfig.setAutoWatermarkInterval(1000L)
 
     // ingest sensor stream
@@ -62,7 +62,7 @@ class PeriodicAssigner extends AssignerWithPeriodicWatermarks[SensorReading] {
 }
 
 /**
-  * Assigns timestamps to records and emits a watermark for each reading with sensorId == "sensor_1".
+  * Assigns timestamps to records and emits a flink.watermark for each reading with sensorId == "sensor_1".
   */
 class PunctuatedAssigner extends AssignerWithPunctuatedWatermarks[SensorReading] {
 
@@ -71,10 +71,10 @@ class PunctuatedAssigner extends AssignerWithPunctuatedWatermarks[SensorReading]
 
   override def checkAndGetNextWatermark(r: SensorReading, extractedTS: Long): Watermark = {
     if (r.id == "sensor_1") {
-      // emit watermark if reading is from sensor_1
+      // emit flink.watermark if reading is from sensor_1
       new Watermark(extractedTS - bound)
     } else {
-      // do not emit a watermark
+      // do not emit a flink.watermark
       null
     }
   }

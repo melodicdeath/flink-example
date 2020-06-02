@@ -1,6 +1,6 @@
-package example.chapter6
+package flink.example.chapter6
 
-import example.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.functions.{AggregateFunction, ReduceFunction}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.TimeCharacteristic
@@ -24,7 +24,7 @@ object WindowFunctions {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure watermark interval
+    // configure flink.watermark interval
     env.getConfig.setAutoWatermarkInterval(1000L)
 
     // ingest sensor stream

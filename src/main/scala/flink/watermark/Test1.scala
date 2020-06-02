@@ -1,4 +1,4 @@
-package watermark1
+package flink.watermark
 
 import java.time.format.DateTimeFormatter
 import java.time.{Instant, LocalDateTime, ZoneId, ZoneOffset}
@@ -63,7 +63,7 @@ object Test1 {
 
     value.print()
 
-    env.execute("watermark test")
+    env.execute("flink.watermark test")
   }
 
 }
@@ -97,7 +97,7 @@ class MyWaterMark extends AssignerWithPeriodicWatermarks[EventObj] {
     val id = Thread.currentThread().getId
     println("currentThreadId:" + id + ",key:" + element.name + ",eventTime:[" + element.datetime
       + "],currentMaxTimestamp:[" +
-      DateFormatUtils.format(currentMaxTimestamp, "yyyy-MM-dd HH:mm:ss") + "],watermark:[" +
+      DateFormatUtils.format(currentMaxTimestamp, "yyyy-MM-dd HH:mm:ss") + "],flink.watermark:[" +
       DateFormatUtils.format(getCurrentWatermark().getTimestamp, "yyyy-MM-dd HH:mm:ss") + "]")
 
     element.getTimestamp

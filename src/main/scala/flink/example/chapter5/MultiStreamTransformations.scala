@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.chapter5
+package flink.example.chapter5
 
-import example.chapter5.util.{Alert, SmokeLevel, SmokeLevelSource}
-import example.chapter5.util.SmokeLevel.SmokeLevel
-import example.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import examplesourcecode.chapter5.util.{Alert, SmokeLevel, SmokeLevelSource}
+import examplesourcecode.chapter5.util.SmokeLevel.SmokeLevel
+import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction
 import org.apache.flink.streaming.api.scala._
@@ -38,7 +38,7 @@ object MultiStreamTransformations {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure watermark interval
+    // configure flink.watermark interval
     env.getConfig.setAutoWatermarkInterval(1000L)
 
     // ingest sensor stream

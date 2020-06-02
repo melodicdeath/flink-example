@@ -1,8 +1,8 @@
-package example.chapter6
+package flink.example.chapter6
 
 import java.util.Collections
 
-import example.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.ExecutionConfig
 import org.apache.flink.api.common.state.{ValueState, ValueStateDescriptor}
 import org.apache.flink.api.common.typeutils.TypeSerializer
@@ -27,7 +27,7 @@ object CustomWindows {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure watermark interval
+    // configure flink.watermark interval
     env.getConfig.setAutoWatermarkInterval(1000L)
 
     // ingest sensor stream
@@ -99,7 +99,7 @@ class OneSecondIntervalTrigger
 
     // register initial timer only for first element
     if (!firstSeen.value()) {
-      // compute time for next early firing by rounding watermark to second
+      // compute time for next early firing by rounding flink.watermark to second
       val t = ctx.getCurrentWatermark + (1000 - (ctx.getCurrentWatermark % 1000))
       ctx.registerEventTimeTimer(t)
       // register timer for the window end
@@ -160,7 +160,7 @@ class CountFunction
 
     // count readings
     val cnt = readings.count(_ => true)
-    // get current watermark
+    // get current flink.watermark
     val evalTime = ctx.currentWatermark
     // emit result
     out.collect((key, ctx.window.getEnd, evalTime, cnt))

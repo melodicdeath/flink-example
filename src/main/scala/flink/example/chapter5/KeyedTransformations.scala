@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.chapter5
+package flink.example.chapter5
 
-import example.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.streaming.api.TimeCharacteristic
 import org.apache.flink.streaming.api.scala._
 
@@ -30,7 +30,7 @@ object KeyedTransformations {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure watermark interval
+    // configure flink.watermark interval
     env.getConfig.setAutoWatermarkInterval(1000L)
 
     // ingest sensor stream

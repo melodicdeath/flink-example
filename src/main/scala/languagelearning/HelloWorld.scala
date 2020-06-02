@@ -1,12 +1,12 @@
+package languagelearning
+
 import java.text.SimpleDateFormat
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter
 
 import com.alibaba.fastjson.JSON
-import com.alibaba.fastjson.serializer.SerializerFeature
 import org.apache.commons.lang3.time.DateUtils
-import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.{ObjectMapper}
-import watermark1.EventObj
+import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.ObjectMapper
 
 import scala.beans.BeanProperty
 
@@ -44,10 +44,7 @@ object HelloWorld {
 
   List(1, 2, 3, 4).filter(_ > 0)
 
-  import java.time.Instant
-  import java.time.LocalDate
-  import java.time.LocalDateTime
-  import java.time.ZoneOffset
+  import java.time.{Instant, LocalDate, LocalDateTime, ZoneOffset}
 
   val longtimestamp: Long = System.currentTimeMillis
   val localDate: LocalDate = Instant.ofEpochMilli(longtimestamp).atZone(ZoneOffset.ofHours(8)).toLocalDate

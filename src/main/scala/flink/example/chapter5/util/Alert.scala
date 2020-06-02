@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.chapter5.util
+package flink.example.chapter5.util
 
 /** Case class to represent an alert. */
 case class Alert(message: String, timestamp: Long)

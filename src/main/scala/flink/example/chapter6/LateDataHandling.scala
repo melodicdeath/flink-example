@@ -1,6 +1,6 @@
-package example.chapter6
+package flink.example.chapter6
 
-import example.util.{SensorReading, SensorSource, SensorTimeAssigner}
+import examplesourcecode.util.{SensorReading, SensorSource, SensorTimeAssigner}
 import org.apache.flink.api.common.functions.MapFunction
 import org.apache.flink.api.common.state.ValueStateDescriptor
 import org.apache.flink.api.scala._
@@ -31,7 +31,7 @@ object LateDataHandling {
 
     // use event time for the application
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    // configure watermark interval
+    // configure flink.watermark interval
     env.getConfig.setAutoWatermarkInterval(500L)
 
     // ingest sensor stream and shuffle timestamps to produce out-of-order records
@@ -133,7 +133,7 @@ class LateReadingsFilter extends ProcessFunction[SensorReading, SensorReading] {
       ctx: ProcessFunction[SensorReading, SensorReading]#Context,
       out: Collector[SensorReading]): Unit = {
 
-    // compare record timestamp with current watermark
+    // compare record timestamp with current flink.watermark
     if (r.timestamp < ctx.timerService().currentWatermark()) {
       // this is a late reading => redirect it to the side output
       ctx.output(LateDataHandling.lateReadingsOutput, r)

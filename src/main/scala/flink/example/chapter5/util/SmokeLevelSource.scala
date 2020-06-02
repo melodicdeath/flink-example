@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example.chapter5.util
+package flink.example.chapter5.util
 
-import example.chapter5.util.SmokeLevel.SmokeLevel
+import examplesourcecode.chapter5.util.SmokeLevel.SmokeLevel
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction
 import org.apache.flink.streaming.api.functions.source.SourceFunction.SourceContext
 
