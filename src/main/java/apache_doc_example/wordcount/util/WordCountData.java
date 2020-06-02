@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package wordcount.util;
+package apache_doc_example.wordcount.util;
 
 /**
  * Provides the default data sets used for the WordCount example program.

@@ -16,11 +16,10 @@
  * limitations under the License.
  */
 
-package socket;
+package apache_doc_example.socket;
 
 import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.ReduceFunction;
-import org.apache.flink.api.java.utils.ParameterTool;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.windowing.time.Time;
@@ -29,7 +28,7 @@ import org.apache.flink.util.Collector;
 /**
  * Implements a streaming windowed version of the "WordCount" program.
  *
- * <p>This program connects to a server socket and reads strings from the socket.
+ * <p>This program connects to a server apache_doc_example.socket and reads strings from the apache_doc_example.socket.
  * The easiest way to try this out is to open a text server (at port 12345)
  * using the <i>netcat</i> tool via
  * <pre>
@@ -61,7 +60,7 @@ public class SocketWindowWordCount {
         // get the execution environment
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // get input data by connecting to the socket
+        // get input data by connecting to the apache_doc_example.socket
         DataStream<String> text = env.socketTextStream(hostname, port, "\n");
 
         // parse the data, group it, window it, and aggregate the counts

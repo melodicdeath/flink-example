@@ -3,27 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="c2dd7e7c-97f4-4c52-93c8-cdf78560dc02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/HelloWorld.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/HelloWorld.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter1/AverageSensorReadings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter1/AverageSensorReadings.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/BasicTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/BasicTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/KeyedTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/KeyedTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/MultiStreamTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/MultiStreamTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/RollingSum.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/RollingSum.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/util/Alert.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/util/Alert.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/util/SmokeLevel.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/util/SmokeLevel.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter5/util/SmokeLevelSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/util/SmokeLevelSource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/CoProcessFunctionTimers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CoProcessFunctionTimers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/CustomWindow.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CustomWindow.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/LateDataHandling.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/LateDataHandling.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/ProcessFunctionTimers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/ProcessFunctionTimers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/SideOutputs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/SideOutputs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/WatermarkGeneration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WatermarkGeneration.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/chapter6/WindowFunctions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WindowFunctions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/util/ResettableSensorSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/util/ResettableSensorSource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/util/SensorReading.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/util/SensorReading.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/util/SensorSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/util/SensorSource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/example/util/SensorTimeAssigner.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/util/SensorTimeAssigner.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/watermark1/Test1.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/watermark/Test1.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/connector/FetchFaultFromKafka.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/connector/FetchFaultFromKafka.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socket/SocketWindowWordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/socket/SocketWindowWordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/socket/SocketWindowWordCount2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/socket/SocketWindowWordCount2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/ThrottledIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/utils/ThrottledIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wikiedits/WikipediaAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/wikiedits/WikipediaAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wordcount/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/wordcount/WordCount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wordcount/util/WordCountData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apache_doc_example/wordcount/util/WordCountData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +245,7 @@
       <workItem from="1590767531126" duration="6208000" />
       <workItem from="1590981651946" duration="29100000" />
       <workItem from="1591085163353" duration="20000" />
-      <workItem from="1591085239572" duration="312000" />
+      <workItem from="1591085239572" duration="1073000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1588996644849</created>
@@ -317,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591084980521</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="文件整理">
+      <created>1591085625050</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591085625050</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +324,8 @@
     <MESSAGE value="fix java.time.datetimeformat" />
     <MESSAGE value="水位线测试" />
     <MESSAGE value="书籍1、5、6章代码学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="书籍1、5、6章代码学习" />
+    <MESSAGE value="文件整理" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件整理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="262" y="78" width="811" height="666" key="#Project_Structure" timestamp="1589650179261">
@@ -361,10 +355,11 @@
     </state>
     <state x="259" y="96" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/45.23.1235.777@45.23.1235.777" timestamp="1588814612059" />
     <state x="260" y="96" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/46.23.1234.777@46.23.1234.777" timestamp="1588850718912" />
-    <state x="286" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591059381770">
-      <screen x="45" y="23" width="1235" height="777" />
+    <state x="288" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591085436126">
+      <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="286" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/45.23.1235.777@45.23.1235.777" timestamp="1591059381770" />
+    <state x="288" y="343" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/48.23.1232.777@48.23.1232.777" timestamp="1591085436126" />
     <state x="428" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590540855189">
       <screen x="42" y="23" width="1238" height="777" />
     </state>
@@ -374,12 +369,12 @@
     </state>
     <state x="427" y="122" key="#xdebugger.evaluate/46.23.1234.777@46.23.1234.777" timestamp="1590999258129" />
     <state x="610" y="221" key="#xdebugger.evaluate/48.23.1232.777@48.23.1232.777" timestamp="1591082524391" />
-    <state x="235" y="98" key="CommitChangelistDialog2" timestamp="1591084980186">
+    <state x="70" y="98" key="CommitChangelistDialog2" timestamp="1591085624666">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="232" y="98" key="CommitChangelistDialog2/45.23.1235.777@45.23.1235.777" timestamp="1590600416517" />
     <state x="233" y="98" key="CommitChangelistDialog2/46.23.1234.777@46.23.1234.777" timestamp="1588996644280" />
-    <state x="235" y="98" key="CommitChangelistDialog2/48.23.1232.777@48.23.1232.777" timestamp="1591084980186" />
+    <state x="70" y="98" key="CommitChangelistDialog2/48.23.1232.777@48.23.1232.777" timestamp="1591085624666" />
     <state width="435" height="466" key="DebuggerActiveHint" timestamp="1590999929738">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
@@ -474,12 +469,12 @@
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="500" height="447" key="SwitcherDM/48.23.1232.777@48.23.1232.777" timestamp="1588684265129" />
-    <state x="265" y="153" key="Vcs.Push.Dialog.v2" timestamp="1591084983490">
+    <state x="265" y="153" key="Vcs.Push.Dialog.v2" timestamp="1591085630220">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="263" y="153" key="Vcs.Push.Dialog.v2/45.23.1235.777@45.23.1235.777" timestamp="1590600418795" />
     <state x="264" y="153" key="Vcs.Push.Dialog.v2/46.23.1234.777@46.23.1234.777" timestamp="1588996648479" />
-    <state x="265" y="153" key="Vcs.Push.Dialog.v2/48.23.1232.777@48.23.1232.777" timestamp="1591084983490" />
+    <state x="265" y="153" key="Vcs.Push.Dialog.v2/48.23.1232.777@48.23.1232.777" timestamp="1591085630220" />
     <state x="320" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1588669478078">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
@@ -513,7 +508,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/wordcount/WordCount.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/apache_doc_example/wordcount/WordCount.java</url>
           <line>89</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

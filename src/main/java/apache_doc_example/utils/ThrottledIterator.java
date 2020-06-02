@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package utils;
+package apache_doc_example.utils;
 
 import java.io.Serializable;
 import java.util.Iterator;
