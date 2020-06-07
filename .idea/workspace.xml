@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2dd7e7c-97f4-4c52-93c8-cdf78560dc02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/flink/apachedoc/ExampleCountWindowAverage.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/flink/apachedoc/ExampleCountWindowAverage2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter08/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter09/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter10/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter12/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter15/Test1.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/languagelearning/chapter16/Test1.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter1/AverageSensorReadings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter1/AverageSensorReadings.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/BasicTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/BasicTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/KeyedTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/KeyedTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/MultiStreamTransformations.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/MultiStreamTransformations.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/util/SmokeLevelSource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter5/util/SmokeLevelSource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CoProcessFunctionTimers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CoProcessFunctionTimers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CustomWindow.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/CustomWindow.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/LateDataHandling.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/LateDataHandling.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/ProcessFunctionTimers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/ProcessFunctionTimers.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/SideOutputs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/SideOutputs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WatermarkGeneration.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WatermarkGeneration.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WindowFunctions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/flink/example/chapter6/WindowFunctions.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTTP Request" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
+        <option value="Package Object" />
       </list>
     </option>
   </component>
@@ -59,6 +52,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="scala_project_settings_configurable.last_selected_tab_index" value="0" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -87,20 +81,20 @@
       <command value="mvn clean package -DskipTests" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ExampleCountWindowAverage2">
+  <component name="RunManager" selected="Application.Test1 (4)">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleCountWindowAverage" type="Application" factoryName="Application" temporary="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="flink.apachedoc.ExampleCountWindowAverage" />
+    <configuration name="Test1 (1)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="languagelearning.chapter09.Test1" />
       <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="flink.apachedoc.*" />
+          <option name="PATTERN" value="languagelearning.chapter09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,13 +102,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExampleCountWindowAverage2" type="Application" factoryName="Application" temporary="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="flink.apachedoc.ExampleCountWindowAverage2" />
+    <configuration name="Test1 (2)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="languagelearning.chapter10.Test1" />
       <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="flink.apachedoc.*" />
+          <option name="PATTERN" value="languagelearning.chapter10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1 (3)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="languagelearning.chapter15.Test1" />
+      <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="languagelearning.chapter15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1 (4)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="languagelearning.chapter16.Test1" />
+      <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="languagelearning.chapter16.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="languagelearning.chapter08.Test1" />
+      <module name="flink-example" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="languagelearning.chapter08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,16 +162,6 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="All in flink-example" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="flink-example" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -165,17 +191,24 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ExampleCountWindowAverage" />
-      <item itemvalue="Application.ExampleCountWindowAverage2" />
-      <item itemvalue="JUnit.All in flink-example" />
+      <item itemvalue="Application.Test1" />
+      <item itemvalue="Application.Test1 (1)" />
+      <item itemvalue="Application.Test1 (2)" />
+      <item itemvalue="Application.Test1 (3)" />
+      <item itemvalue="Application.Test1 (4)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ExampleCountWindowAverage2" />
-        <item itemvalue="Application.ExampleCountWindowAverage" />
-        <item itemvalue="JUnit.All in flink-example" />
+        <item itemvalue="Application.Test1 (4)" />
+        <item itemvalue="Application.Test1 (3)" />
+        <item itemvalue="Application.Test1 (2)" />
+        <item itemvalue="Application.Test1 (1)" />
+        <item itemvalue="Application.Test1" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SCALA_SHOW_INHERITED" />
   </component>
   <component name="SvnConfiguration">
     <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
@@ -221,7 +254,8 @@
       <workItem from="1590767531126" duration="6208000" />
       <workItem from="1590981651946" duration="29100000" />
       <workItem from="1591085163353" duration="20000" />
-      <workItem from="1591085239572" duration="3239000" />
+      <workItem from="1591085239572" duration="20949000" />
+      <workItem from="1591454468590" duration="10237000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1588996644849</created>
@@ -293,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591086342016</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="state变量测试">
+      <created>1591088634322</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591088634322</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +349,8 @@
     <MESSAGE value="水位线测试" />
     <MESSAGE value="书籍1、5、6章代码学习" />
     <MESSAGE value="文件整理" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件整理" />
+    <MESSAGE value="state变量测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="state变量测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="262" y="78" width="811" height="666" key="#Project_Structure" timestamp="1589650179261">
@@ -347,20 +389,26 @@
       <screen x="42" y="23" width="1238" height="777" />
     </state>
     <state x="428" y="283" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/42.23.1238.777@42.23.1238.777" timestamp="1590540855189" />
-    <state x="610" y="221" key="#xdebugger.evaluate" timestamp="1591082524391">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state x="608" y="221" key="#xdebugger.evaluate" timestamp="1591461984903">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
+    <state x="608" y="221" key="#xdebugger.evaluate/45.23.1235.777@45.23.1235.777" timestamp="1591461984903" />
     <state x="427" y="122" key="#xdebugger.evaluate/46.23.1234.777@46.23.1234.777" timestamp="1590999258129" />
     <state x="610" y="221" key="#xdebugger.evaluate/48.23.1232.777@48.23.1232.777" timestamp="1591082524391" />
-    <state x="48" y="98" key="CommitChangelistDialog2" timestamp="1591086341726">
+    <state x="412" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591199317843">
+      <screen x="45" y="23" width="1235" height="777" />
+    </state>
+    <state x="412" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/45.23.1235.777@45.23.1235.777" timestamp="1591199317842" />
+    <state x="257" y="48" key="CommitChangelistDialog2" timestamp="1591088634020">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="232" y="98" key="CommitChangelistDialog2/45.23.1235.777@45.23.1235.777" timestamp="1590600416517" />
     <state x="233" y="98" key="CommitChangelistDialog2/46.23.1234.777@46.23.1234.777" timestamp="1588996644280" />
-    <state x="48" y="98" key="CommitChangelistDialog2/48.23.1232.777@48.23.1232.777" timestamp="1591086341726" />
-    <state width="435" height="466" key="DebuggerActiveHint" timestamp="1590999929738">
-      <screen x="46" y="23" width="1234" height="777" />
+    <state x="257" y="48" key="CommitChangelistDialog2/48.23.1232.777@48.23.1232.777" timestamp="1591088634020" />
+    <state width="436" height="466" key="DebuggerActiveHint" timestamp="1591461976162">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
+    <state width="436" height="466" key="DebuggerActiveHint/45.23.1235.777@45.23.1235.777" timestamp="1591461976162" />
     <state width="435" height="466" key="DebuggerActiveHint/46.23.1234.777@46.23.1234.777" timestamp="1590999929738" />
     <state x="199" y="90" key="DiffContextDialog" timestamp="1590982961378">
       <screen x="48" y="23" width="1232" height="777" />
@@ -376,61 +424,61 @@
       <screen x="46" y="23" width="1234" height="777" />
     </state>
     <state x="395" y="126" key="Github.UntrackedFilesDialog/46.23.1234.777@46.23.1234.777" timestamp="1588907377030" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom" timestamp="1591088245360">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom" timestamp="1591551553108">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.bottom/42.23.1238.777@42.23.1238.777" timestamp="1590078096162" />
     <state width="1190" height="197" key="GridCell.Tab.0.bottom/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/45.23.1235.777@45.23.1235.777" timestamp="1591059542353" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1591000251034" />
-    <state width="1190" height="197" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1591088245360" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center" timestamp="1591088245359">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/45.23.1235.777@45.23.1235.777" timestamp="1591551553108" />
+    <state width="1190" height="245" key="GridCell.Tab.0.bottom/46.23.1234.777@46.23.1234.777" timestamp="1591166302320" />
+    <state width="1190" height="197" key="GridCell.Tab.0.bottom/48.23.1232.777@48.23.1232.777" timestamp="1591153571014" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center" timestamp="1591551553107">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.center/42.23.1238.777@42.23.1238.777" timestamp="1590078096160" />
     <state width="1190" height="197" key="GridCell.Tab.0.center/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/45.23.1235.777@45.23.1235.777" timestamp="1591059542351" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1591000251032" />
-    <state width="1190" height="197" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1591088245359" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left" timestamp="1591088245358">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center/45.23.1235.777@45.23.1235.777" timestamp="1591551553107" />
+    <state width="1190" height="245" key="GridCell.Tab.0.center/46.23.1234.777@46.23.1234.777" timestamp="1591166302315" />
+    <state width="1190" height="197" key="GridCell.Tab.0.center/48.23.1232.777@48.23.1232.777" timestamp="1591153571012" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left" timestamp="1591551553107">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.left/42.23.1238.777@42.23.1238.777" timestamp="1590078096158" />
     <state width="1190" height="197" key="GridCell.Tab.0.left/43.23.1237.777@43.23.1237.777" timestamp="1589420033783" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/45.23.1235.777@45.23.1235.777" timestamp="1591059542351" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1591000251032" />
-    <state width="1190" height="197" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1591088245358" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right" timestamp="1591088245360">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left/45.23.1235.777@45.23.1235.777" timestamp="1591551553107" />
+    <state width="1190" height="245" key="GridCell.Tab.0.left/46.23.1234.777@46.23.1234.777" timestamp="1591166302314" />
+    <state width="1190" height="197" key="GridCell.Tab.0.left/48.23.1232.777@48.23.1232.777" timestamp="1591153571011" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right" timestamp="1591551553108">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
     <state width="1190" height="197" key="GridCell.Tab.0.right/42.23.1238.777@42.23.1238.777" timestamp="1590078096161" />
     <state width="1190" height="197" key="GridCell.Tab.0.right/43.23.1237.777@43.23.1237.777" timestamp="1589420033784" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/45.23.1235.777@45.23.1235.777" timestamp="1591059542352" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1591000251033" />
-    <state width="1190" height="197" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1591088245360" />
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1591085156750">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right/45.23.1235.777@45.23.1235.777" timestamp="1591551553108" />
+    <state width="1190" height="245" key="GridCell.Tab.0.right/46.23.1234.777@46.23.1234.777" timestamp="1591166302319" />
+    <state width="1190" height="197" key="GridCell.Tab.0.right/48.23.1232.777@48.23.1232.777" timestamp="1591153571013" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom" timestamp="1591551474114">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom/45.23.1235.777@45.23.1235.777" timestamp="1591059523733" />
-    <state width="1190" height="245" key="GridCell.Tab.1.bottom/46.23.1234.777@46.23.1234.777" timestamp="1591000016551" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom/45.23.1235.777@45.23.1235.777" timestamp="1591551474114" />
+    <state width="1190" height="245" key="GridCell.Tab.1.bottom/46.23.1234.777@46.23.1234.777" timestamp="1591166302132" />
     <state width="1190" height="245" key="GridCell.Tab.1.bottom/48.23.1232.777@48.23.1232.777" timestamp="1591085156750" />
-    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1591085156750">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center" timestamp="1591551474113">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.center/45.23.1235.777@45.23.1235.777" timestamp="1591059523732" />
-    <state width="1190" height="245" key="GridCell.Tab.1.center/46.23.1234.777@46.23.1234.777" timestamp="1591000016550" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center/45.23.1235.777@45.23.1235.777" timestamp="1591551474113" />
+    <state width="1190" height="245" key="GridCell.Tab.1.center/46.23.1234.777@46.23.1234.777" timestamp="1591166302131" />
     <state width="1190" height="245" key="GridCell.Tab.1.center/48.23.1232.777@48.23.1232.777" timestamp="1591085156750" />
-    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1591085156749">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left" timestamp="1591551474112">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.left/45.23.1235.777@45.23.1235.777" timestamp="1591059523731" />
-    <state width="1190" height="245" key="GridCell.Tab.1.left/46.23.1234.777@46.23.1234.777" timestamp="1591000016550" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left/45.23.1235.777@45.23.1235.777" timestamp="1591551474112" />
+    <state width="1190" height="245" key="GridCell.Tab.1.left/46.23.1234.777@46.23.1234.777" timestamp="1591166302130" />
     <state width="1190" height="245" key="GridCell.Tab.1.left/48.23.1232.777@48.23.1232.777" timestamp="1591085156749" />
-    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1591085156750">
-      <screen x="48" y="23" width="1232" height="777" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right" timestamp="1591551474113">
+      <screen x="45" y="23" width="1235" height="777" />
     </state>
-    <state width="1190" height="245" key="GridCell.Tab.1.right/45.23.1235.777@45.23.1235.777" timestamp="1591059523732" />
-    <state width="1190" height="245" key="GridCell.Tab.1.right/46.23.1234.777@46.23.1234.777" timestamp="1591000016551" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right/45.23.1235.777@45.23.1235.777" timestamp="1591551474113" />
+    <state width="1190" height="245" key="GridCell.Tab.1.right/46.23.1234.777@46.23.1234.777" timestamp="1591166302131" />
     <state width="1190" height="245" key="GridCell.Tab.1.right/48.23.1232.777@48.23.1232.777" timestamp="1591085156750" />
     <state x="202" y="75" key="Maven.ArtifactSearchDialog" timestamp="1588669525381">
       <screen x="48" y="23" width="1232" height="777" />
@@ -452,12 +500,12 @@
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state width="500" height="447" key="SwitcherDM/48.23.1232.777@48.23.1232.777" timestamp="1588684265129" />
-    <state x="265" y="153" key="Vcs.Push.Dialog.v2" timestamp="1591086343606">
+    <state x="265" y="153" key="Vcs.Push.Dialog.v2" timestamp="1591088635927">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
     <state x="263" y="153" key="Vcs.Push.Dialog.v2/45.23.1235.777@45.23.1235.777" timestamp="1590600418795" />
     <state x="264" y="153" key="Vcs.Push.Dialog.v2/46.23.1234.777@46.23.1234.777" timestamp="1588996648479" />
-    <state x="265" y="153" key="Vcs.Push.Dialog.v2/48.23.1232.777@48.23.1232.777" timestamp="1591086343606" />
+    <state x="265" y="153" key="Vcs.Push.Dialog.v2/48.23.1232.777@48.23.1232.777" timestamp="1591088635927" />
     <state x="320" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1588669478078">
       <screen x="48" y="23" width="1232" height="777" />
     </state>
@@ -482,10 +530,10 @@
     <state x="327" y="186" width="672" height="675" key="run.anything.popup/45.23.1235.777@45.23.1235.777" timestamp="1588814935509" />
     <state x="328" y="186" width="672" height="675" key="run.anything.popup/46.23.1234.777@46.23.1234.777" timestamp="1588819233607" />
     <state x="329" y="186" width="670" height="675" key="run.anything.popup/48.23.1232.777@48.23.1232.777" timestamp="1588684315172" />
-    <state x="329" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1588850702993">
+    <state x="329" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1591163198706">
       <screen x="46" y="23" width="1234" height="777" />
     </state>
-    <state x="329" y="124" width="670" height="676" key="search.everywhere.popup/46.23.1234.777@46.23.1234.777" timestamp="1588850702993" />
+    <state x="329" y="124" width="670" height="676" key="search.everywhere.popup/46.23.1234.777@46.23.1234.777" timestamp="1591163198706" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -502,5 +550,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="xs.head" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
